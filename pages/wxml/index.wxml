@@ -1,0 +1,25 @@
+<!--pages/wxml/index.wxml-->
+<text>当前时间：{{time}}</text>
+<!-- 一个简单的文本框 -->
+<text data-test="{{test}}">一个简单的文本框</text>
+
+<!-- // https://image8.wbiao.co/mall/e4eb13be7ac541c6a509e1dbf26cc5e6.jpg?x-oss-process=image/resize,w_291 -->
+<!-- <image class="userinfo-avatar", src="https://image8.wbiao.co/mall/e4eb13be7ac541c6a509e1dbf26cc5e6.jpg"></image> -->
+
+<!-- array 是一个数组,
+  在组件上使用 wx:for 控制属性绑定一个数组，即可使用数组中各项的数据重复渲染该组件。默认数组的当前项的下标变量名默认为 index，数组当前项的变量名默认为 item,
+  使用 wx:for-item 指定数组当前元素的变量名，使用 wx:for-index 指定数组当前下标的变量名：
+ -->
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+  {{idx}}: {{itemName.msg}}
+</view>
+
+<!-- 类似 block wx:if ，也可以将 wx:for 用在 <block/> 标签上，以渲染一个包含多节点的结构块。例如： -->
+<block wx:for="{{[1,2,3]}}">
+<view>{{index}}:</view>
+<view>{{item}}</view>
+</block>
+
+
+
+
