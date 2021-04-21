@@ -16,9 +16,23 @@
 
 <!-- 类似 block wx:if ，也可以将 wx:for 用在 <block/> 标签上，以渲染一个包含多节点的结构块。例如： -->
 <block wx:for="{{[1,2,3]}}">
-<view>{{index}}:</view>
-<view>{{item}}</view>
+  <view>{{index}}:</view>
+  <view>{{item}}</view>
 </block>
+
+<template name="odd">
+  <view>odd</view>
+</template>
+
+<template name="even">
+  <view>even</view>
+</template>
+
+<!-- is可以动态决定具体需要渲染哪个模板，如代码2-18所示。 -->
+<block wx:for="{{[1,2,3,4,5]}}">
+  <template is="{{item % 2 == 0 ? 'even':'odd'}}"/>
+</block>
+
 
 
 
