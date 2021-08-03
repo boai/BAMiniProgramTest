@@ -10,7 +10,12 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName'), // 如需尝试获取用户信息可改为false
+    naviHeight: app.globalData.naviHeight,
+    navibarData: {
+      showCapsule:1,//是否显示左上角图标   1表示显示    0表示不显示
+      title:"首页",//导航栏 中间的标题
+    }  
   },
   // 事件处理函数
   bindViewTap() {
@@ -33,8 +38,10 @@ Page({
       this.setData({
         canIUseGetUserProfile: true
       })
+
     }
-    
+    console.log('navi 高度：' + this.data.naviHeight)
+
   },
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗

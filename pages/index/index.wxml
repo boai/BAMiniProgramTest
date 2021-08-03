@@ -1,5 +1,6 @@
 <!--index.wxml-->
-<view class="container">
+<navi-bar navibar-data='{{navibarData}}'></navi-bar>
+<view class="container" style='margin-top: {{naviHeight}}px'>
   <view class="userinfo">
     <block wx:if="{{canIUseOpenData}}" calss="userinfo-opendata">
       <view class="userinfo-avatar" bindtap="bindViewTap">

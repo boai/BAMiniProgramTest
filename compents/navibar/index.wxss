@@ -1,0 +1,56 @@
+/* pages/commpents/navibar/index.wxss */
+.navi-home {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #7FFFAA;
+  color: #000;
+  z-index: 9999999;
+}
+
+.navi-home-title {
+  position: absolute;
+  text-align: center;
+  max-width: 300rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 36rpx;
+  color: #2c2b2b;
+  font-weight: 600;
+  background: #FFFACD;
+}
+
+.navi-capsule {
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+  width: 160rpx;
+  justify-content: space-between;
+  background: #DDA0DD;
+}
+
+.navibar-v-line {
+  width: 1px;
+  height: 32rpx;
+  background-color: #e5e5e5;
+}
+
+/* .back-pre, .back-home {
+  width: 60rpx;
+   height: 36rpx;
+  margin-top: 20rpx;
+  padding: 10rpx;
+}
+.nav-capsule .back-home {
+  width: 80;
+  height: 40rpx;
+  margin-top: 20rpx;
+} */
+
+
+
