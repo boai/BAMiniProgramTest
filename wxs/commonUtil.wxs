@@ -1,0 +1,7 @@
+
+// 获取本地图片路径
+var getLocalImage = function (imageName){
+  return '/resources/imgs/'+imageName;
+}
+module.exports.getLocalImage = getLocalImage;
+

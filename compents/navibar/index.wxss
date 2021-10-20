@@ -3,7 +3,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  background: #7FFFAA;
+  /* background: #7FFFAA; */
   color: #000;
   z-index: 9999999;
 }
@@ -22,7 +22,7 @@
   font-size: 36rpx;
   color: #2c2b2b;
   font-weight: 600;
-  background: #FFFACD;
+  /* background: #FFFACD; */
 }
 
 .navi-capsule {
@@ -31,26 +31,22 @@
   margin-left: 30rpx;
   width: 160rpx;
   justify-content: space-between;
-  background: #DDA0DD;
+  /* background: #DDA0DD; */
 }
 
 .navibar-v-line {
   width: 1px;
-  height: 32rpx;
+  height: 20px;
+  margin-left: -5px;
   background-color: #e5e5e5;
 }
 
-/* .back-pre, .back-home {
-  width: 60rpx;
-   height: 36rpx;
-  margin-top: 20rpx;
-  padding: 10rpx;
+.navi_back, .navi_home {
+  width: 28px;
+  height: 28px;
+  /* background-color: #eeeeee; */
 }
-.nav-capsule .back-home {
-  width: 80;
-  height: 40rpx;
-  margin-top: 20rpx;
-} */
+
 
 
 

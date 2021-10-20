@@ -18,10 +18,11 @@
       <!-- <view bindtap='_backhome'> -->
       <!-- <image src='/imgs/back-home.png' mode='aspectFill' class='back-home'></image> -->
       <!-- </view>  -->
-
-      <text style="color: aqua;">返回</text>
+      <!-- {{commonUtil.getLocalImage}} -->
+      <!-- <text style="color: aqua;">返回</text> -->
+      <image class="navi_back" src="/resources/imgs/icon_back.png" model='aspectFit'></image>
       <view class='navibar-v-line'></view>
-      <text>主页</text>
+      <image class="navi_home" src="/resources/imgs/icon_home.png" model='aspectFit'></image>
     </view>
 
 
